@@ -10,3 +10,7 @@
 # Interpolation and Literals
 - Interpolation: `"Hello $1"` -> Hello ...
 - Literals: `'Hello $1'` -> Hello $1
+- Mixed: `"Hello $USER \$1"` -> Hello javier $1
+
+# Files
+- Display file name only: `basename file`
