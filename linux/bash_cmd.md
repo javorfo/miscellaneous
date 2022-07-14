@@ -1,3 +1,13 @@
+# Heading
+```bash
+#!/bin/bash
+# Author: ...
+# Web: ...
+# Description...
+# within $HOME
+# Last Edited: Month Day Year
+```
+
 # Arguments
 | Arg identifier | Description                       |
 | -------------- | --------------------------------- |
