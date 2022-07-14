@@ -11,6 +11,8 @@
 - Interpolation: `echo "Hello $1"` -> Hello ...
 - Literals: `echo 'Hello $1'` -> Hello $1
 - Mixed: `echo "Hello $USER \$1"` -> Hello javier $1
+- Echo with escape sequence: `echo -e "hello \c"`
+- Echo without new line: `echo -n "hello"`
 
 # Files
 - Display file name only: `basename file`
@@ -33,3 +35,7 @@
 - Verbose: `bash -v script.sh`
 - Executed: `bash -x script.sh`
 
+# Input
+- Read: `read; echo "result: $REPLY"`
+- Read: `read -p "name: " var_name` 
+- Read: `read -n1 -p "Press any key to exit" # n1 number of chars accepted` 
