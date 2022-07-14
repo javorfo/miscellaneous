@@ -43,16 +43,16 @@
 # JAVA
 - Download the latest version of [JDTLS server](https://download.eclipse.org/jdtls/milestones/?d)
 - Decompress the downloaded file in any place you want (root folder preferable)
-- Setup line 15 and 16 in [ftplugin/java.lua](https://github.com/jaorfo/nvim/blob/main/ftplugin/java.lua) with the path of `jdtls`:
+- Setup line 15 and 16 in [ftplugin/java.lua](https://github.com/jaorfo/miscellaneous/nvim/blob/main/ftplugin/java.lua) with the path of `jdtls`:
 ```lua
 '-jar', '/path/to/jdtls/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar',
 '-configuration', '/path/to/jdtls/config_linux', 
 ```
-- Setup workspace, line 17 in [ftplugin/java.lua](https://github.com/jaorfo/nvim/blob/main/ftplugin/java.lua):
+- Setup workspace, line 17 in [ftplugin/java.lua](https://github.com/jaorfo/miscellaneous/nvim/blob/main/ftplugin/java.lua):
 ```lua
 '-data', '/path/to/workspace'
 ```
-- If you use Lombok. You have to download [lombok.jar](https://projectlombok.org/download). Place it in somewhere in your filesystem and set it up in line 10 from [ftplugin/java.lua](https://github.com/jaorfo/nvim/blob/main/ftplugin/java.lua):
+- If you use Lombok. You have to download [lombok.jar](https://projectlombok.org/download). Place it in somewhere in your filesystem and set it up in line 10 from [ftplugin/java.lua](https://github.com/jaorfo/miscellaneous/nvim/blob/main/ftplugin/java.lua):
 ```lua
 '-javaagent:/usr/local/share/lombok/lombok.jar',
 ```
@@ -62,7 +62,7 @@
 ```console
 [user@host ~]$ ./mvnw clean install
 ```
-- Once built it, setup line 24 in [ftplugin/java.lua](https://github.com/jaorfo/nvim/blob/main/ftplugin/java.lua) with the path of `java-debug`:
+- Once built it, setup line 24 in [ftplugin/java.lua](https://github.com/jaorfo/miscellaneous/nvim/blob/main/ftplugin/java.lua) with the path of `java-debug`:
 ```lua
 init_options = {
     bundles = {
@@ -70,7 +70,7 @@ init_options = {
 	}
 }
 ```
-- Configure your app host and port where is going to expose debug session. [Here](https://github.com/jaorfo/nvim/blob/main/ftplugin/java.lua) the example with 8787 (JBoss default) but you can change it:
+- Configure your app host and port where is going to expose debug session. [Here](https://github.com/jaorfo/miscellaneous/nvim/blob/main/ftplugin/java.lua) the example with 8787 (JBoss default) but you can change it:
 ```lua
 dap.configurations.java = {
   {
