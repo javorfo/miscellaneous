@@ -2,7 +2,6 @@
 - Native Java LSP
 - Native Kotlin LSP
 - Native VimScript LSP
-- Native Lua LSP
 - Folder explorer
 - File and String search
 - Autocompletion
