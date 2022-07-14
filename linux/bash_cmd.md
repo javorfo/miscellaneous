@@ -25,3 +25,6 @@
 
 ### Environment variables
 - Show: `printenv`
+
+### Set commands in a variable
+- `myvar=$(pwd)`
