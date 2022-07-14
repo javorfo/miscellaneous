@@ -7,6 +7,23 @@
 | $#             | The argument count is especially useful when we need to set the amount of arguments needed for correct script execution. |
 | $*             | Refers to all arguments. |
 
+# Options Standard
+- **-a** List all items
+- **-c** Get a count of all items
+- **-d** Output directory
+- **-e** Expand items
+- **-f** Specify a file
+- **-h** Show the help page
+- **-i** Ignore the character case
+- **-l** List a text
+- **-o** Send output to a file
+- **-q** Keep silent; don't ask the user
+- **-r** Process something recursively
+- **-s** Use stealth mode
+- **-v** Use verbose mode
+- **-x** Specify an executable
+- **-y** Accept without prompting me
+
 # Print
 - Interpolation: `echo "Hello $1"` -> Hello ...
 - Literals: `echo 'Hello $1'` -> Hello $1
