@@ -1,4 +1,4 @@
-## Neovim Configuration for Java, Kotlin, VimScript, Lua...
+## Neovim Configuration for Java, Kotlin, VimScript...
 - Native Java LSP
 - Native Kotlin LSP
 - Native VimScript LSP
@@ -109,8 +109,3 @@ require'lspconfig'.kotlin_language_server.setup{
 ```console
 [user@host ~]$ sudo npm install -g vim-language-server
 ```
-
-</br>
-
-# LUA
-- Configure [Lua Server](https://github.com/sumneko/lua-language-server/wiki/Build-and-Run)
