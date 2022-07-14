@@ -51,26 +51,4 @@ require'lspconfig'.kotlin_language_server.setup{
 		"/path/to/kotlin-language-server-main/server/build/install/server/bin/kotlin-language-server"
 	}
 }
-
-require'lspconfig'.sumneko_lua.setup {
-  cmd = {
-  	"path/to/lua-language-server/bin/lua-language-server"
-  }
-  settings = {
-    Lua = {
-      runtime = {
-        version = 'LuaJIT',
-      },
-      diagnostics = {
-        globals = {'vim'},
-      },
-      workspace = {
-        library = vim.api.nvim_get_runtime_file("/path/to/workspace", true),
-      },
-      telemetry = {
-        enable = false,
-      },
-    },
-  },
-}
 EOF
