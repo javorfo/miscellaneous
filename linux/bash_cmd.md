@@ -7,10 +7,10 @@
 | $#             | The argument count is especially useful when we need to set the amount of arguments needed for correct script execution. |
 | $*             | Refers to all arguments. |
 
-# Interpolation and Literals
-- Interpolation: `"Hello $1"` -> Hello ...
-- Literals: `'Hello $1'` -> Hello $1
-- Mixed: `"Hello $USER \$1"` -> Hello javier $1
+# Print
+- Interpolation: `echo "Hello $1"` -> Hello ...
+- Literals: `echo 'Hello $1'` -> Hello $1
+- Mixed: `echo "Hello $USER \$1"` -> Hello javier $1
 
 # Files
 - Display file name only: `basename file`
@@ -28,3 +28,8 @@
 
 ### Set commands in a variable
 - `myvar=$(pwd)`
+
+# Debug
+- Verbose: `bash -v script.sh`
+- Executed: `bash -x script.sh`
+
