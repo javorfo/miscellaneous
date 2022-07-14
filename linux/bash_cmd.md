@@ -38,4 +38,4 @@
 # Input
 - Read: `read; echo "result: $REPLY"`
 - Read: `read -p "name: " var_name` 
-- Read: `read -n1 -p "Press any key to exit" # n1 number of chars accepted` 
+- Read: `read -n1 -p "Press any key to exit" # n1 number of chars accepted or -sn1 to not seeing the entered text` 
