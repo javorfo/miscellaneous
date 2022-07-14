@@ -30,8 +30,8 @@
 
 ## Clone
 ```console
-[user@host ~]$ mkdir ~/.config
-[user@host ~]$ cd ~/.config; git clone https://github.com/jaorfo/nvim.git
+[user@host ~]$ git clone https://github.com/jaorfo/miscellaneous.git
+[user@host ~]$ cp -r miscellaneous/nvim .config/
 ```
 
 ## Open init.vim and wait for plugin installation
