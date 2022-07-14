@@ -14,3 +14,14 @@
 
 # Files
 - Display file name only: `basename file`
+
+# Variables
+- `name="fdfas"`, `name=12`
+
+### Arrays
+- Declare: `myarray=(one two three four)`
+- Print: `echo ${myarray[0]}; echo ${myarray[*]} #prints all`
+- Remove: `unset array[1]; unset array #remove all elements`
+
+### Environment variables
+- Show: `printenv`
