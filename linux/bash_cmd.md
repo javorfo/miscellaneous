@@ -67,3 +67,9 @@
 - Read: `read; echo "result: $REPLY"`
 - Read: `read -p "name: " var_name` 
 - Read: `read -n1 -p "Press any key to exit" # n1 number of chars accepted or -sn1 to not seeing the entered text` 
+
+# Conditionals
+- Command **test**: `test expression`, `test ! expression #negation`, `test expression -o expression2 #or`, `test expression -a expression2 #and`
+- Bracket conditional: `[ $HOME = /home/javier ]`, `[ ! $HOME = /home/javier ]`, 
+- Others: `[ -n $SSH_TTY ] #If this is true, then the connection is made with SSH`, `[ -z $1 ] #A true result for this query means that no input parameters have been supplied to the script`
+- Test Integers: `[ number1 -gt number2] #-eq -ge -le -lt -ne`
