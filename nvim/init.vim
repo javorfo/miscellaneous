@@ -17,11 +17,10 @@ nnoremap <SPACE> <Nop>
 call plug#begin()
 Plug 'preservim/nerdtree' 
 Plug 'Xuyuanp/nerdtree-git-plugin' 
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim' 
 Plug 'jaorfo/vim-libertango' 
 Plug 'jaorfo/vim-minimaline' 
-Plug 'jaorfo/vim-java-main' 
+Plug 'jaorfo/vim-vimain' 
 Plug 'jaorfo/vim-wildcat'  
 Plug 'jaorfo/vim-hevimgway'  
 Plug 'neovim/nvim-lspconfig'
