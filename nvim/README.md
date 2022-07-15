@@ -1,7 +1,8 @@
-## Neovim Configuration for Java, Kotlin, VimScript...
-- Native Java LSP
-- Native Kotlin LSP
-- Native VimScript LSP
+## Neovim Configuration for Java, Kotlin, Lua, VimScript...
+- Java LSP
+- Kotlin LSP
+- VimScript LSP
+- Lua LSP
 - Folder explorer
 - File and String search
 - Autocompletion
