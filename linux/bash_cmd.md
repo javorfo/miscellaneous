@@ -18,7 +18,7 @@
 | $*             | Refers to all arguments. |
 | $?             | Get the return status.   |
 
-# Options Standard
+# Standard Options
 - **-a** List all items
 - **-c** Get a count of all items
 - **-d** Output directory
@@ -73,3 +73,16 @@
 - Bracket conditional: `[ $HOME = /home/javier ]`, `[ ! $HOME = /home/javier ]`, 
 - Others: `[ -n $SSH_TTY ] #If this is true, then the connection is made with SSH`, `[ -z $1 ] #A true result for this query means that no input parameters have been supplied to the script`
 - Test Integers: `[ number1 -gt number2] #-eq -ge -le -lt -ne`
+
+### Test files
+- **-d** This shows that it's a directory
+- **-e** This shows that the file exists in any form
+- **-x** This shows that the file is executable
+- **-f** This shows that the file is a regular file
+- **-r** This shows that the file is readable
+- **-p** This shows that the file is a named pipe
+- **-b** This shows that the file is a block device
+- **file1 -nt file2** This checks if file1 is newer than file2
+- **file1 -ot file2** This checks if file1 is older than file2
+- **-O file** This checks if the logged-in user is the owner of the file
+- **-c** This shows that the file is a character device
