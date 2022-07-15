@@ -86,3 +86,18 @@
 - **file1 -ot file2** This checks if file1 is older than file2
 - **-O file** This checks if the logged-in user is the owner of the file
 - **-c** This shows that the file is a character device
+
+### If else
+```bash
+if condition; then
+  statement
+else
+  statement
+fi
+```
+
+### Check Strings
+- `if [ string1 \< string2 ] #if string1 is less than string2` 
+- `if [ string1 \> string2 ] #if string1 is greater than string2` 
+- `if [ -n string1 ] #if string1 is longer than zero` 
+- `if [ -z string1 ] #if string1 has zero length` 
