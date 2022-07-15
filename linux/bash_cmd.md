@@ -16,6 +16,7 @@
 | ${10}          | Where two or more digits are needed to represent the argument position. Brace brackets are used to delimit the variable name from anyother content. Single value digits are expected. |
 | $#             | The argument count is especially useful when we need to set the amount of arguments needed for correct script execution. |
 | $*             | Refers to all arguments. |
+| $?             | Get the return status.   |
 
 # Options Standard
 - **-a** List all items
