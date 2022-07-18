@@ -18,6 +18,17 @@
 | $*             | Refers to all arguments. |
 | $?             | Get the return status.   |
 
+# Parameter Substitution
+- ${parameter-default}
+- Substituing a possible empty parameter:
+```bash
+#!/bin/bash
+#Use parameter substitution to provide default value
+name=${1-"Anonymous"}
+echo "Hello $name"
+exit 0
+```
+
 # Standard Options
 - **-a** List all items
 - **-c** Get a count of all items
@@ -58,6 +69,13 @@
 
 ### Set commands in a variable
 - `myvar=$(pwd)`
+
+### Execute arithmetic 
+```bash
+count=0
+(( count++ ))
+echo $count
+```
 
 # Debug
 - Verbose: `bash -v script.sh`
