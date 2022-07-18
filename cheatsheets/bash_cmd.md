@@ -86,6 +86,8 @@
 - **file1 -ot file2** This checks if file1 is older than file2
 - **-O file** This checks if the logged-in user is the owner of the file
 - **-c** This shows that the file is a character device
+- **-o** or clause **test -f file -o -e file**
+- **-a** and clause **test -f file -a -e file**
 
 ### If else
 ```bash
@@ -101,3 +103,11 @@ fi
 - `if [ string1 \> string2 ] #if string1 is greater than string2` 
 - `if [ -n string1 ] #if string1 is longer than zero` 
 - `if [ -z string1 ] #if string1 has zero length` 
+
+# Text colors
+- \033 is the escaped character and 31/32 the color
+```bash
+RED="\033[31m"
+GREEN="\033[32m"
+echo -e ${RED}Error
+```
