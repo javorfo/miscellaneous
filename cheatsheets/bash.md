@@ -131,10 +131,23 @@ echo -e ${RED}Error
 ```
 
 # Loops
+- Classic loop
 ```bash
 for loopVar in values; do
 echo $loopVar
 done
+```
+- C-Style loop redirecting the output
+```bash
+for (( var = 1; var < 3; var++ )); do
+echo $var
+done > file.txt
+```
+- While to read a file
+```bash
+while read server; do
+echo $server
+done < servers.txt
 ```
 
 # IFS
