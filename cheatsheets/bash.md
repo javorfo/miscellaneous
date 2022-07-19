@@ -152,3 +152,12 @@ done < servers.txt
 
 # IFS
 - Change IFS to be a new line: **IFS=$'\n'**
+
+# Functions
+- To check functions: **declare -F**
+```bash
+testing() {
+  echo "hello"
+}
+testing
+```
