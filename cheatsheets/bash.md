@@ -129,3 +129,13 @@ RED="\033[31m"
 GREEN="\033[32m"
 echo -e ${RED}Error
 ```
+
+# Loops
+```bash
+for loopVar in values; do
+echo $loopVar
+done
+```
+
+# IFS
+- Change IFS to be a new line: **IFS=$'\n'**
