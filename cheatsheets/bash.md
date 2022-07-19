@@ -157,7 +157,8 @@ done < servers.txt
 - To check functions: **declare -F**
 ```bash
 testing() {
-  echo "hello"
+  local myvar=10
+  return $var
 }
 testing
 ```
