@@ -167,3 +167,4 @@ testing
 # GREP
 - **grep -i word # Search ignore case** 
 - **grep -c word # Search word and return count** 
+- **grep -A2 word # Search word and 2 lines after it** 
