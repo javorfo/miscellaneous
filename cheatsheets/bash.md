@@ -162,3 +162,6 @@ testing() {
 }
 testing
 ```
+# GREP
+- **grep -i word # Search ignore case** 
+- **grep -c word # Search word and return count** 
