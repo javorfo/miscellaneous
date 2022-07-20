@@ -165,22 +165,22 @@ testing() {
 testing
 ```
 # GREP
-- **grep -i word # Search ignore case** 
-- **grep -c word # Search word and return count** 
-- **grep -A2 word # Search word and 2 lines after it** 
+- `grep -i word # Search ignore case`
+- `grep -c word # Search word and return count` 
+- `grep -A2 word # Search word and 2 lines after it` 
 
 # SED
-- **sed -n '1,3 p' /etc/passwd #prints lines 1 to 3**
-- **sed -n '/^root/ p' /etc/passwd #prints line starting with root**
-- **sed s/pattern/replacement/flag #substitute flags: p (print), g (global), w (sends result to file)**
-- **sed -n ' /^pi/ s/bash/sh/p ' /etc/passwd #replace bash with sh searching with pi**
-- **sed -n ' /^pi/ s@/bin/bash@/usr/bin/sh@p ' /etc/passwd #replacements with / directories**
-- **sed '2s/old text/new text/' myfile #modify second line**
-- **sed '2,3s/old text/new text/' myfile #modify second to third line**
-- **sed '2,$s/old text/new text/' myfile #modify second to end of file**
-- **sed -i ' /^pi/ s@/bin/bash@/bin/sh/ ' $HOME/passwd #edit the file**
-- **sed -i.bak ' /^pi/ s@/bin/bash@/bin/sh/ ' $HOME/passwd #edit the file and make a backup**
-- **sed -i '3d' file #delete third line**
-- **sed -i '1,3d' file #delete first to third line**
-- **sed -i '2i\inserted text' myfile #insert second line**
-- **sed -i '2a\inserted text' myfile #append second line**
+- `sed -n '1,3 p' /etc/passwd #prints lines 1 to 3`
+- `sed -n '/^root/ p' /etc/passwd #prints line starting with root`
+- `sed s/pattern/replacement/flag #substitute flags: p (print), g (global), w (sends result to file)`
+- `sed -n ' /^pi/ s/bash/sh/p ' /etc/passwd #replace bash with sh searching with pi`
+- `sed -n ' /^pi/ s@/bin/bash@/usr/bin/sh@p ' /etc/passwd #replacements with / directories`
+- `sed '2s/old text/new text/' myfile #modify second line`
+- `sed '2,3s/old text/new text/' myfile #modify second to third line`
+- `sed '2,$s/old text/new text/' myfile #modify second to end of file`
+- `sed -i ' /^pi/ s@/bin/bash@/bin/sh/ ' $HOME/passwd #edit the file`
+- `sed -i.bak ' /^pi/ s@/bin/bash@/bin/sh/ ' $HOME/passwd #edit the file and make a backup`
+- `sed -i '3d' file #delete third line`
+- `sed -i '1,3d' file #delete first to third line`
+- `sed -i '2i\inserted text' myfile #insert second line`
+- `sed -i '2a\inserted text' myfile #append second line`
