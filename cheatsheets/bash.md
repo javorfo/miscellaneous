@@ -168,3 +168,10 @@ testing
 - **grep -i word # Search ignore case** 
 - **grep -c word # Search word and return count** 
 - **grep -A2 word # Search word and 2 lines after it** 
+
+# SED
+- **sed -n '1,3 p' /etc/passwd #prints lines 1 to 3**
+- **sed -n '/^root/ p' /etc/passwd #prints line starting with root**
+- **sed s/pattern/replacement/flag #substitute flags: p (print), g (global), w (sends result to file)**
+- **sed -n ' /^pi/ s/bash/sh/p ' /etc/passwd #replace bash with sh searching with pi**
+- **sed -n ' /^pi/ s@/bin/bash@/usr/bin/sh@p ' /etc/passwd #replacements with / directories**
