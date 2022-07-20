@@ -151,7 +151,9 @@ done < servers.txt
 ```
 
 # IFS
+- By default is a space
 - Change IFS to be a new line: **IFS=$'\n'**
+- Change IFS to be a comma separated: **IFS=","**
 
 # Functions
 - To check functions: **declare -F**
