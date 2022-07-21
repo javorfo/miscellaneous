@@ -184,3 +184,10 @@ testing
 - `sed -i '1,3d' file #delete first to third line`
 - `sed -i '2i\inserted text' myfile #insert second line`
 - `sed -i '2a\inserted text' myfile #append second line`
+
+# AWK
+- `awk ' { print $0 }' /etc/passwd #prints first entire line`
+- `awk ' { print $1 }' /etc/passwd #prints first field (space separated)`
+- `awk -F":" '{ print $1 }' /etc/passwd #colon separated or awk ' BEGIN { FS=":" } { print $1 } ' /etc/passwd`
+- `awk ' BEGIN { FS=":" } { print $1 } END { print NR } ' /etc/passwd #prints a line counter at the end`
+- 
