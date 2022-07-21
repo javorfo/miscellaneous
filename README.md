@@ -5,3 +5,4 @@
   - [Bash](https://github.com/javorfo/miscellaneous/tree/master/cheatsheets/bash.md)
 - [Nvim configuration](https://github.com/javorfo/miscellaneous/tree/master/nvim)
 - [Git configuration](https://github.com/javorfo/miscellaneous/tree/master/git)
+- [Alacritty](https://github.com/javorfo/miscellaneous/tree/master/alacritty/alacritty.yml)
