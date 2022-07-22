@@ -194,15 +194,15 @@ testing
 - `awk ' NR==3 ' file #prints third line`
 - `awk ' /bash$/ ' /etc/passwd #regular expressions`
 - VARIABLES
-  - FIELDWIDTHS: Specifies the field width
-  - RS: Specifies the record separator
-  - FS: Specifies the field separator
-  - OFS: Specifies the output separator, which is a space by default
-  - ORS: Specifies the output separator
-  - FILENAME: Holds the processed file name
-  - NF: Holds the line being processed
-  - FNR: Holds the record which is processed
-  - IGNORECASE: Ignores character case
+  - **FIELDWIDTHS**: Specifies the field width
+  - **RS**: Specifies the record separator
+  - **FS**: Specifies the field separator
+  - **OFS**: Specifies the output separator, which is a space by default
+  - **ORS**: Specifies the output separator
+  - **FILENAME**: Holds the processed file name
+  - **NF**: Holds the line being processed
+  - **FNR**: Holds the record which is processed
+  - **IGNORECASE**: Ignores character case
 - `awk 'BEGIN{FS="\n"; RS=""} {print $1,$3}' myfile # field separator is new line, record separator is empty, records 1 and 3`
 - `awk 'BEGIN {FS="\n"} {print $1,"FNR="FNR,"NR="NR} END{print "Total lines:",NR}' myfile `
 - `awk 'BEGIN { var=2; print var }' #defining own variables`
