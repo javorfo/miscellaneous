@@ -190,4 +190,6 @@ testing
 - `awk ' { print $1 }' /etc/passwd #prints first field (space separated)`
 - `awk -F":" '{ print $1 }' /etc/passwd #colon separated or awk ' BEGIN { FS=":" } { print $1 } ' /etc/passwd`
 - `awk ' BEGIN { FS=":" } { print $1 } END { print NR } ' /etc/passwd #prints a line counter at the end`
-- 
+- `awk ' NR<3 ' file #prints to third line`
+- `awk ' NR==3 ' file #prints third line`
+- `awk ' /bash$/ ' /etc/passwd #regular expressions`
