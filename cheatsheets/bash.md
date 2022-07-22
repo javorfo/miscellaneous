@@ -184,6 +184,7 @@ testing
 - `sed -i '1,3d' file #delete first to third line`
 - `sed -i '2i\inserted text' myfile #insert second line`
 - `sed -i '2a\inserted text' myfile #append second line`
+- To reuse a sed command. Save in file.sed and then `sed -f file.sed myfile`
 
 # AWK
 - `awk ' { print $0 }' /etc/passwd #prints first entire line`
@@ -217,3 +218,4 @@ total += $var
 mean = total / 3
 print "Mean value:",mean
 }' myfile #for loop`
+- To reuse a awk command. Save in file.awk and then `awk -f file.sed myfile`
