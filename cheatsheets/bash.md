@@ -203,4 +203,17 @@ testing
   - NF: Holds the line being processed
   - FNR: Holds the record which is processed
   - IGNORECASE: Ignores character case
-- 
+- `awk 'BEGIN{FS="\n"; RS=""} {print $1,$3}' myfile # field separator is new line, record separator is empty, records 1 and 3`
+- `awk 'BEGIN {FS="\n"} {print $1,"FNR="FNR,"NR="NR} END{print "Total lines:",NR}' myfile `
+- `awk 'BEGIN { var=2; print var }' #defining own variables`
+- `awk '{if ($1 > 50) print $1}' myfile #if on records`
+- `awk '{if ($1 > 50) print $1 * 2; else print $1 * 3}' myfile #if else`
+- `awk '{
+total = 0
+for (var = 1; var < 4; var++)
+{
+total += $var
+}
+mean = total / 3
+print "Mean value:",mean
+}' myfile #for loop`
